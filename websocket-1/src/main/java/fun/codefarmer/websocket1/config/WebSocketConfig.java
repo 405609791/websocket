@@ -30,7 +30,8 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
          * topic 消息代理的前缀，如果后面发送的消息前缀带有 topic，转发给代理，代理在发送给连接的客户端
          * topic 是路径 一定注意 “/” 如果忘记 /，会导致去服务器取不到消息，能发送，大家都看不到
          */
-        registry.enableSimpleBroker("/topic");
+                                            //群聊/topic    ，    单聊路径
+        registry.enableSimpleBroker("/topic","/queue");
         //其二 随意命名
         /**
          * 作用：

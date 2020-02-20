@@ -27,6 +27,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-websocket</artifactId>
         </dependency>
+        <!--单聊-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <!--单聊-->
 <!--前端依赖 开始-->
         <!-- https://mvnrepository.com/artifact/org.webjars/sockjs-client -->
         <dependency>
